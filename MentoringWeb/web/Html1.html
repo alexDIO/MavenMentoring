@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Transport</title>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td>
+                    <span>Марка</span>
+                </td>
+                <td>
+                    <input type="text" name="mark"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Источник инергии</span>
+                </td>
+                <td>
+                    <select name="Energy_source">
+
+                        <option value="g">gas</option>
+                        <option value="p">petrol</option>
+                        <option value="e">electricity</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Коробка передач</span>
+                </td>
+                <td>
+                    <input type="radio" name="Transmission" value="manual" checked/>
+                    <input type="radio" name="Transmission" value="automate" checked/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Цвета</span>
+                </td>
+                <td>
+                    <form action="multiplevalues.do" method="post">
+                        <input type="checkbox" name="colors" value="Black">Black
+                        <input type="checkbox" name="colors" value="Black">White
+                        <input type="checkbox" name="colors" value="Black">Red
+                        <input type="checkbox" name="colors" value="Black">Green
+                        <input type="checkbox" name="colors" value="Black">Blue
+                        <input type="checkbox" name="colors" value="Black">Yellow
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="send"/>
+    </form>
+</body>
+</html>

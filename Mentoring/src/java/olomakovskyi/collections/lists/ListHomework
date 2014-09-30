@@ -1,0 +1,32 @@
+                                                            LinkedList:     ArrayList:
+Adding N elements to end of the List:                       64              44
+в LinkedList добавляется ссылка на предыдущий элемент, в ArrayList присваивается значение следуещему элементу
+
+Adding N elements to middle of the List:                    50760           4675
+в LinkedList перебором находится элемент по номеру, добавляются ссылки на предыдущий и следуещий элементы к добавляемому элементу
++ у следуещего и предыдущего элемента изменяются соответствующие ссылки, в ArrayList массив разбивается на 2 части и копируется
+в тот же массив вместе с новым элементом
+
+Adding N elements to middle of the List thru iterator:      84              7327
+в LinkedList минимизируется время на поиск нужного элемента, на что тратится основное время, в ArrayList добавляются ненужные шаги
+
+Adding N elements to begin of the List:                     19              42535
+в LinkedList нужно добавить ссылку на следуещий элемент, в ArrayList нужно сдвинуть весь массив на 1
+
+Sorting of the List:                                        532             353
+Разница в реализации метода .toArray у LinkedList массив заполняется перебором в цикле и копированием элементов, в ArrayList
+копированием внутреннего массива целиком
+
+Removing N elements from the begin List:                    37              49627
+в LinkedList удаляется первый элемент и ссылка на него, в ArrayList копируется весь массив без 1 элемента
+
+Removing N elements from the middle List:                   99451           5057
+в LinkedList перебором находится элемент по номеру, удаляется элемент, у предыдущего и следуещего элементов изменяются
+соответствующие ссылки, в ArrayList массив разбивается на 2 части и копируется в тот же массив без удаляемого элемента,
+последнему элементу присваивается нулл
+
+Removing N elements from middle of the List thru iterator:  9               2221
+в LinkedList минимизируется время на поиск нужного элемента, на что тратится основное время, ArrayList???
+
+Removing N elements from the end of the List:               12              1
+в LinkedList удаляется последний элемент и ссылка на него, в ArrayList удаляется последний элемент

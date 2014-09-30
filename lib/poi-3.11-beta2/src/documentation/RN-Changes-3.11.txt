@@ -1,0 +1,30 @@
+@List changes here@
+
+[TODO Add 3.11 beta 2 items here]
+
+Recommended Apache XMLBeans version increased to 2.6.0 (any version from 
+ 2.3.0 or later will work though)
+XSSF support for evaluating formula references to other Workbooks (56737)
+HSSF and XSSF support for evaluating formulas with multi-sheet references,
+ for functions that support that (55906)
+HSSF and XSSF Workbooks are now CLoseable, so you can call close() to 
+ explicitly free the file based resources when you're done (56537)
+NPOIFS now fully supports writing, including streaming write, and in-place 
+ updating of existing entries. NPOIFSFileSystem now surpasses the old 
+ POIFSFileSystem in all cases. 
+XSSF Text Extraction support for Headers, Footers and Comments (56022, 56023)
+SXSSF Shared Strings optional support (53130)
+XWPF Change Tracking support (56075)
+HWPF password hash function (56077)
+XWPF document protection with password support (56076)
+SXSSF support for a system-wide setting of where Temp files get created, via
+ TempFile / TempFileCreationStrategy (56735)
+
+Backwards Incompatible changes:
+
+The interface org.apache.poi.xssf.eventusermodel.XSSFSheetXMLHandler.SheetContentsHandler
+has had two method signature changes:
+ endRow() -> endRow(int)
+ cell(String,String) -> cell(String,String,Comment)
+
+The minimum Java version has been increased to Java 1.6
