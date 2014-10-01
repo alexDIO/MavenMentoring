@@ -1,4 +1,4 @@
-/**
+package jsf; /**
  * Created by olomakovskyi on 9/19/2014.
  */
 
@@ -26,13 +26,21 @@ public class MyHttpServlet1 extends HttpServlet{
         mark = req.getParameter("mark");
         energySource = req.getParameterValues("Energy_source")[0];
         String[] colorsArray = req.getParameterValues("colors");
-        transmission = req.getParameterValues("Transmission")[0];
+        transmission = req.getParameter("Transmission");
         if (colorsArray.length > 0) {
             colors = Arrays.asList(colorsArray);
         }
         resp.setCharacterEncoding("UTF-8");
         resp.getWriter().write(generateHtml());
         resp.getWriter().println("Info was sent");
+    }
+
+    private String compareStrings(String variable, String elemValue, String result){
+        if (elemValue.equals(variable)){
+            return result;
+        } else {
+            return "";
+        }
     }
 
     private String generateHtml(){
@@ -58,7 +66,7 @@ public class MyHttpServlet1 extends HttpServlet{
                 "                    <span>Источник инергии</span>\n" +
                 "                </td>\n" +
                 "                <td>\n" +
-                "                    <select name=\"Energy_source\" value=\""+energySource+"\" >\n" +
+                "                    <select name=\"Energy_source\" >\n" +
                 "                        <option value=\"g\">gas</option>\n" +
                 "                        <option value=\"p\">petrol</option>\n" +
                 "                        <option value=\"e\">electricity</option>\n" +
@@ -70,9 +78,11 @@ public class MyHttpServlet1 extends HttpServlet{
                 "                    <span>Коробка передач</span>\n" +
                 "                </td>\n" +
                 "                <td>\n" +
-                "                    <input type=\"radio\" name=\"Transmission\" value=\"manual\" checked/>Manual\n" +
-                "                    <input type=\"radio\" name=\"Transmission\" value=\"automate\" checked/>Automate\n" +
-                "                </td>\n" +
+                "                    <form method=\"post\">\n" +
+                "                       <input type=\"radio\" name=\"Transmission\" value=\"manual\" " + compareStrings(transmission,"manual","checked") + "\"/>Manual\n" +
+                "                        <input type=\"radio\" name=\"Transmission\" value=\"automate\" " + compareStrings(transmission,"automate","checked") + "\"/ >Automate\n" +
+                "                    <form>\n" +
+                "                   </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
                 "                <td>\n" +

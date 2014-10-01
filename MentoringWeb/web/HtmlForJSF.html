@@ -33,8 +33,10 @@
                     <span>Коробка передач</span>
                 </td>
                 <td>
-                    <input type="radio" name="Transmission" value="manual" checked/>
-                    <input type="radio" name="Transmission" value="automate" checked/>
+                    <form method="post">
+                        <input type="radio" name="Transmission" value="manual" checked />
+                        <input type="radio" name="Transmission" value="automate" checked aria-selected="true"/>
+                    </form>
                 </td>
             </tr>
             <tr>
@@ -42,7 +44,7 @@
                     <span>Цвета</span>
                 </td>
                 <td>
-                    <form action="multiplevalues.do" method="post">
+                    <form action="checkboxes" method="post">
                         <input type="checkbox" name="colors" value="Black">Black
                         <input type="checkbox" name="colors" value="Black">White
                         <input type="checkbox" name="colors" value="Black">Red
