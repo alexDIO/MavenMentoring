@@ -1,9 +1,5 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: olomakovskyi
-  Date: 9/30/2014
-  Time: 6:43 PM
-  To change this template use File | Settings | File Templates.
+  Created by  olomakovskyi on 9/30/2014
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="jsp.ListStorage" %>
@@ -12,20 +8,24 @@
     if (request.getParameter("inText") != null && request.getParameter("inText").length() > 0){
         ListStorage.list.add(request.getParameter("inText"));
     }
-    if (request.getParameter("curElem") !=null){
+    if (request.getParameter("delete") != null && request.getParameter("curElem") != null){
         ListStorage.list.remove(Integer.parseInt(request.getParameter("curElem")));
     }
+    if (request.getParameter("edit") != null && request.getParameter("curElem") != null){
+        ListStorage.setText(ListStorage.list.get(Integer.parseInt(request.getParameter("curElem"))));
+    }
+
 %>
+
 
 <html>
 <head>
     <title></title>
 </head>
 <body>
-    <form>
-        <input type="text" name="inText"/>
+    <form method="get">
+        <input type="text" name="inText" value="Test +  <% String.format("\"%s\"", ListStorage.getText()); %>">
         <input type="submit" value="Add"/>
-        <input type="button" value="Click me" />
 
     </form>
     <table>
@@ -37,9 +37,9 @@
                 <span><%=ListStorage.list.get(i)%></span>
             </td>
             <td>
-                <form>
-                    <input type="submit" value="Delete"/>
-                    <input type="button" value="Edit"/>
+                <form method="get">
+                    <input type="submit" name="delete" value="Delete"/>
+                    <input type="submit" name="edit" value="Edit"/>
                     <input type="hidden" value="<%=i%>" name="curElem"/>
                 </form>
             </td>
