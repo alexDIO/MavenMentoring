@@ -8,7 +8,9 @@ import java.util.List;
  */
 public class ListStorage {
     public static List<String> list = new ArrayList<>();
-    public static String text = "test";
+    public static String text = "";
+    public static String buttonName = "Add";
+    public static int elemToEdit;
 
     public static String getText() {
         return text;
@@ -16,5 +18,21 @@ public class ListStorage {
 
     public static void setText(String text) {
         ListStorage.text = text;
+    }
+
+    public static String getButtonName() {
+        return buttonName;
+    }
+
+    public static void setButtonName(String buttonName) {
+        ListStorage.buttonName = buttonName;
+    }
+
+    public static int getElemToEdit() {
+        return elemToEdit;
+    }
+
+    public static void setElemToEdit(int elemToEdit) {
+        ListStorage.elemToEdit = elemToEdit;
     }
 }

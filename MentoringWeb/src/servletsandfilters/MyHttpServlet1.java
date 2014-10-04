@@ -1,4 +1,4 @@
-package jsf; /**
+package servletsandfilters; /**
  * Created by olomakovskyi on 9/19/2014.
  */
 
@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class MyHttpServlet1 extends HttpServlet{
+public class MyHttpServlet1 extends HttpServlet {
     private String mark = "";
     private String energySource;
     private String transmission = "manual";
@@ -36,25 +36,25 @@ public class MyHttpServlet1 extends HttpServlet{
         resp.getWriter().println("Info was sent");
     }
 
-    private String compareStrings(String variable, String elemValue, String result){
+    private String compareStrings(String variable, String elemValue, String result) {
 
-        if (elemValue.equals(variable)){
+        if (elemValue.equals(variable)) {
             return result;
         } else {
             return "";
         }
     }
 
-    private String compareStrings(List<String> variable, String elem, String result){
-        if (variable.contains(elem)){
+    private String compareStrings(List<String> variable, String elem, String result) {
+        if (variable.contains(elem)) {
             return result;
         } else {
             return "";
         }
     }
 
-    private String generateHtml(){
-        return  "<!DOCTYPE html>\n" +
+    private String generateHtml() {
+        return "<!DOCTYPE html>\n" +
                 "<html xmlns=\"http://www.w3.org/1999/html\">\n" +
                 "<head lang=\"en\">\n" +
                 "    <meta charset=\"UTF-8\">\n" +
@@ -68,7 +68,7 @@ public class MyHttpServlet1 extends HttpServlet{
                 "                    <span>Марка</span>\n" +
                 "                </td>\n" +
                 "                <td>\n" +
-                "                    <input type=\"text\" name=\"mark\" value=\""+mark+"\"/>\n" +
+                "                    <input type=\"text\" name=\"mark\" value=\"" + mark + "\"/>\n" +
                 "                </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
@@ -77,9 +77,9 @@ public class MyHttpServlet1 extends HttpServlet{
                 "                </td>\n" +
                 "                <td>\n" +
                 "                    <select name=\"Energy_source\" >\n" +
-                "                        <option value=\"gas\" " + compareStrings(energySource,"gas","selected") + ">gas</option>\n" +
-                "                        <option value=\"petrol\" " + compareStrings(energySource,"petrol","selected") + ">petrol</option>\n" +
-                "                        <option value=\"electricity\" " + compareStrings(energySource,"electricity","selected") + ">electricity</option>\n" +
+                "                        <option value=\"gas\" " + compareStrings(energySource, "gas", "selected") + ">gas</option>\n" +
+                "                        <option value=\"petrol\" " + compareStrings(energySource, "petrol", "selected") + ">petrol</option>\n" +
+                "                        <option value=\"electricity\" " + compareStrings(energySource, "electricity", "selected") + ">electricity</option>\n" +
                 "                    </select>\n" +
                 "                </td>\n" +
                 "            </tr>\n" +
@@ -88,8 +88,8 @@ public class MyHttpServlet1 extends HttpServlet{
                 "                    <span>Коробка передач</span>\n" +
                 "                </td>\n" +
                 "                <td>\n" +
-                "                        <input type=\"radio\" name=\"Transmission\" value=\"manual\" " + compareStrings(transmission,"manual","checked") + "/>Manual\n" +
-                "                        <input type=\"radio\" name=\"Transmission\" value=\"automate\" " + compareStrings(transmission,"automate","checked") + "/>Automate\n" +
+                "                        <input type=\"radio\" name=\"Transmission\" value=\"manual\" " + compareStrings(transmission, "manual", "checked") + "/>Manual\n" +
+                "                        <input type=\"radio\" name=\"Transmission\" value=\"automate\" " + compareStrings(transmission, "automate", "checked") + "/>Automate\n" +
                 "                   </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
@@ -97,12 +97,12 @@ public class MyHttpServlet1 extends HttpServlet{
                 "                    <span>Цвета</span>\n" +
                 "                </td>\n" +
                 "                <td>\n" +
-                "                        <input type=\"checkbox\" name=\"colors\" value=\"Black\" " + compareStrings(colors, "Black", "checked") +">Black\n" +
-                "                        <input type=\"checkbox\" name=\"colors\" value=\"White\" " + compareStrings(colors, "White", "checked") +">White\n" +
-                "                        <input type=\"checkbox\" name=\"colors\" value=\"Red\" " + compareStrings(colors, "Red", "checked") +">Red\n" +
-                "                        <input type=\"checkbox\" name=\"colors\" value=\"Green\" " + compareStrings(colors, "Green", "checked") +">Green\n" +
-                "                        <input type=\"checkbox\" name=\"colors\" value=\"Blue\" " + compareStrings(colors, "Blue", "checked") +">Blue\n" +
-                "                        <input type=\"checkbox\" name=\"colors\" value=\"Yellow\" " + compareStrings(colors, "Yellow", "checked") +">Yellow\n" +
+                "                        <input type=\"checkbox\" name=\"colors\" value=\"Black\" " + compareStrings(colors, "Black", "checked") + ">Black\n" +
+                "                        <input type=\"checkbox\" name=\"colors\" value=\"White\" " + compareStrings(colors, "White", "checked") + ">White\n" +
+                "                        <input type=\"checkbox\" name=\"colors\" value=\"Red\" " + compareStrings(colors, "Red", "checked") + ">Red\n" +
+                "                        <input type=\"checkbox\" name=\"colors\" value=\"Green\" " + compareStrings(colors, "Green", "checked") + ">Green\n" +
+                "                        <input type=\"checkbox\" name=\"colors\" value=\"Blue\" " + compareStrings(colors, "Blue", "checked") + ">Blue\n" +
+                "                        <input type=\"checkbox\" name=\"colors\" value=\"Yellow\" " + compareStrings(colors, "Yellow", "checked") + ">Yellow\n" +
                 "                </td>\n" +
                 "            </tr>\n" +
                 "        </table>\n" +

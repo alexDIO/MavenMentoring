@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
     <servlet>
         <servlet-name>MyHttpServlet1</servlet-name>
-        <servlet-class>jsf.MyHttpServlet1</servlet-class>
+        <servlet-class>servletsandfilters.MyHttpServlet1</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MyHttpServlet1</servlet-name>
@@ -12,7 +12,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>MyServlet</servlet-name>
-        <servlet-class>jsf.MyServlet</servlet-class>
+        <servlet-class>servletsandfilters.MyServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
@@ -21,7 +21,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>MyHttpServlet2</servlet-name>
-        <servlet-class>jsf.MyHttpServlet2</servlet-class>
+        <servlet-class>servletsandfilters.MyHttpServlet2</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MyHttpServlet2</servlet-name>
@@ -29,7 +29,7 @@
     </servlet-mapping>
     <filter>
         <filter-name>MyFilter2</filter-name>
-        <filter-class>jsf.MyFilter2</filter-class>
+        <filter-class>servletsandfilters.MyFilter2</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>MyFilter2</filter-name>
@@ -37,7 +37,7 @@
     </filter-mapping>
     <filter>
         <filter-name>MyFilter1</filter-name>
-        <filter-class>jsf.MyFilter1</filter-class>
+        <filter-class>servletsandfilters.MyFilter1</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>MyFilter1</filter-name>

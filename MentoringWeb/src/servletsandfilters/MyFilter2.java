@@ -1,4 +1,4 @@
-package jsf;
+package servletsandfilters;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -21,7 +21,7 @@ public class MyFilter2 implements Filter {
 //            System.out.println("epic fail");
 //            return;
 //        }
-        filterChain.doFilter(servletRequest,servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
         System.out.println("Response and request were thrown");
     }
 

@@ -1,4 +1,4 @@
-package jsf;
+package servletsandfilters;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class MyFilter1 implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         long start = System.currentTimeMillis();
         System.out.println("Started at " + start);
-        filterChain.doFilter(servletRequest,servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
         long end = System.currentTimeMillis();
         System.out.println("Ended at " + end);
         servletResponse.getWriter().println("Performance " + (end - start));

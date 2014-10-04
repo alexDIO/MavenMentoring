@@ -1,4 +1,4 @@
-package jsf;
+package servletsandfilters;
 
 import javax.servlet.*;
 import java.io.IOException;
