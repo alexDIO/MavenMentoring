@@ -36,12 +36,17 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/NewModule/web/WEB-INF/lib/jstl-1.2.jar!/" />
+          <root url="file://$MODULE_DIR$/lib/jstl" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib/jstl" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/lib/jstl" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/lib/jstl" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jstl-1.2" level="project" />
   </component>
 </module>
 

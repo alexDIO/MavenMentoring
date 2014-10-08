@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jstl-1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jstl/jstl-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jstl/servlet-api-3.0-alpha-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jstl/standard-1.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jstl/servlet-api-3.0-alpha-1.jar!/" />
+    </SOURCES>
+  </library>
+</component>
