@@ -149,7 +149,7 @@ public final class RichTextRun {
 		return parentRun.getText().substring(startPos, startPos+length);
 	}
 	/**
-	 * Fetch the text, in raw storage form
+	 * Fetch the text, in raw forweb form
 	 */
 	public String getRawText() {
 		return parentRun.getRawText().substring(startPos, startPos+length);

@@ -105,7 +105,7 @@ public final class PropertyTable extends PropertyTableBase implements BlockWrita
     }
 
     /**
-     * Write the storage to an OutputStream
+     * Write the forweb to an OutputStream
      *
      * @param stream the OutputStream to which the stored data should
      *               be written

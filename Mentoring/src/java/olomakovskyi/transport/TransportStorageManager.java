@@ -26,7 +26,7 @@ public class TransportStorageManager {
         storedCars = storage.getAllTransport();
 
         if (storedCars.size() == 0) {
-            System.out.println("There are no cars in storage.");
+            System.out.println("There are no cars in forweb.");
             nextID = 0;
         } else {
             for (Map.Entry<Integer, Transport> entry : storedCars.entrySet()) {

@@ -51,7 +51,7 @@ public class DocumentInputStream extends InputStream implements LittleEndianInpu
 	 */
 	public DocumentInputStream(DocumentEntry document) throws IOException {
 	   if (!(document instanceof DocumentNode)) {
-	      throw new IOException("Cannot open internal document storage");
+	      throw new IOException("Cannot open internal document forweb");
 	   }
 	   DocumentNode documentNode = (DocumentNode)document;
 	   DirectoryNode parentNode = (DirectoryNode)document.getParent();

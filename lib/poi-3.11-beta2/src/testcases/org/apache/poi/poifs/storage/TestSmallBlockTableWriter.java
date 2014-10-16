@@ -83,7 +83,7 @@ public final class TestSmallBlockTableWriter extends TestCase {
         BlockAllocationTableWriter bat  = sbtw.getSBAT();
 
         // 15 small blocks: 6 for doc340, 0 for doc5000 (too big), 0
-        // for doc0 (no storage needed), 1 each for doc1 through doc9
+        // for doc0 (no forweb needed), 1 each for doc1 through doc9
         assertEquals(15 * 64, root.getSize());
 
         // 15 small blocks rounds up to 2 big blocks

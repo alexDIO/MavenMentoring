@@ -49,7 +49,7 @@ public class ExOleObjStg extends RecordAtom implements PositionDependentRecord, 
     private byte[] _data;
 
     /**
-     * Constructs a new empty storage container.
+     * Constructs a new empty forweb container.
      */
     public ExOleObjStg() {
         _header = new byte[8];

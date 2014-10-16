@@ -7,7 +7,6 @@ import java.io.IOException;
  * Created by olomakovskyi on 10/9/2014.
  */
 public class FilterForList implements Filter {
-    private FilterConfig filterConfig;
     private ListHolder holder;
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

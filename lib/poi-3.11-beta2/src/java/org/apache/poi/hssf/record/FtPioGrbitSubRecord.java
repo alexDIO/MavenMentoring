@@ -60,7 +60,7 @@ public final class FtPioGrbitSubRecord extends SubRecord {
     
     /**
      * A bit that specifies whether the object data are stored in an
-     * embedding storage (= 0) or in the controls stream (ctls) (= 1).
+     * embedding forweb (= 0) or in the controls stream (ctls) (= 1).
      */
     public static final int PRSTM_BIT        = 1 << 5;
     

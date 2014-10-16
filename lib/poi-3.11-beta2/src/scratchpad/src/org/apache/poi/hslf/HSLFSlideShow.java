@@ -79,7 +79,7 @@ public final class HSLFSlideShow extends POIDocument {
 	// Raw Pictures contained in the pictures stream
 	private List<PictureData> _pictures;
 
-    // Embedded objects stored in storage records in the document stream, lazily populated.
+    // Embedded objects stored in forweb records in the document stream, lazily populated.
     private ObjectData[] _objects;
 
     /**

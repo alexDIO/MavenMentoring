@@ -186,7 +186,7 @@ public final class CharacterSprmUncompressor extends SprmUncompressor
              * 
              * A signed 32-bit integer that specifies either the position in the
              * Data Stream of a picture or binary data or the name of an OLE
-             * object storage.
+             * object forweb.
              */
             newCHP.setFcPic( sprm.getOperand() );
             newCHP.setFSpec( true );

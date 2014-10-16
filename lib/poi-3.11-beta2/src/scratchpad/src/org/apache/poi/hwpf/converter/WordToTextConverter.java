@@ -162,7 +162,7 @@ public class WordToTextConverter extends AbstractWordConverter
      * output several {@link HWPFDocument}s into single text document.
      * 
      * @param document
-     *            XML DOM Document used as storage for text pieces
+     *            XML DOM Document used as forweb for text pieces
      */
     public WordToTextConverter( Document document )
     {

@@ -194,7 +194,7 @@ public final class SmallDocumentBlock implements BlockWritable, ListManagedBlock
     }
 
     /**
-     * Calculate the storage size of a set of SmallDocumentBlocks
+     * Calculate the forweb size of a set of SmallDocumentBlocks
      *
      * @param size number of SmallDocumentBlocks
      *
@@ -219,7 +219,7 @@ public final class SmallDocumentBlock implements BlockWritable, ListManagedBlock
     }
 
     /**
-     * Write the storage to an OutputStream
+     * Write the forweb to an OutputStream
      *
      * @param stream the OutputStream to which the stored data should
      *               be written

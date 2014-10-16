@@ -140,7 +140,7 @@ public final class BlockAllocationTableWriter implements BlockWritable, BATManag
     }
 
     /**
-     * Write the storage to an OutputStream
+     * Write the forweb to an OutputStream
      *
      * @param stream the OutputStream to which the stored data should
      *               be written

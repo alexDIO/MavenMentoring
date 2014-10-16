@@ -225,7 +225,7 @@ public final class POIFSDocument implements BATManaged, BlockWritable, POIFSView
 	 * read data from the internal stores
 	 *
 	 * @param buffer the buffer to write to
-	 * @param offset the offset into our storage to read from
+	 * @param offset the offset into our forweb to read from
 	 * This method is currently (Oct 2008) only used by test code. Perhaps it can be deleted
 	 */
 	void read(byte[] buffer, int offset) {
@@ -295,7 +295,7 @@ public final class POIFSDocument implements BATManaged, BlockWritable, POIFSView
 	/* ********** START implementation of BlockWritable ********** */
 
 	/**
-	 * Write the storage to an OutputStream
+	 * Write the forweb to an OutputStream
 	 *
 	 * @param stream the OutputStream to which the stored data should be written
 	 */

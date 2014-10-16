@@ -20,7 +20,7 @@
 package org.apache.poi.poifs.storage;
 
 /**
- * Abstract base class of all POIFS block storage classes. All
+ * Abstract base class of all POIFS block forweb classes. All
  * extensions of BigBlock should write 512 or 4096 bytes of data when
  * requested to write their data (as per their BigBlockSize).
  *
@@ -83,7 +83,7 @@ abstract class BigBlock
     /* ********** START implementation of BlockWritable ********** */
 
     /**
-     * Write the storage to an OutputStream
+     * Write the forweb to an OutputStream
      *
      * @param stream the OutputStream to which the stored data should
      *               be written

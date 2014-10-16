@@ -36,16 +36,16 @@ import java.util.*;
  * to values), there are problems with that implementation,
  * particularly when trying to keep the two TreeMaps synchronized with
  * each other. And if the data contained in the TreeMaps is large, the
- * cost of redundant storage becomes significant.<p>
+ * cost of redundant forweb becomes significant.<p>
  *
  * This solution keeps the data properly synchronized and minimizes
- * the data storage. The red-black algorithm is based on TreeMap's,
+ * the data forweb. The red-black algorithm is based on TreeMap's,
  * but has been modified to simultaneously map a tree node by key and
  * by value. This doubles the cost of put operations (but so does
  * using two TreeMaps), and nearly doubles the cost of remove
  * operations (there is a savings in that the lookup of the node to be
  * removed only has to be performed once). And since only one node
- * contains the key and value, storage is significantly less than that
+ * contains the key and value, forweb is significantly less than that
  * required by two TreeMaps.<p>
  *
  * There are some limitations placed on data kept in this Map. The

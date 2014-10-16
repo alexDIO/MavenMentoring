@@ -235,7 +235,7 @@ public class ExOleObjAtom extends RecordAtom {
      * Gets the reference to the persistent object
      *
      * @return the reference to the persistent object, corresponds with an
-     *         {@code ExOleObjStg} storage container.
+     *         {@code ExOleObjStg} forweb container.
      */
     public int getObjStgDataRef() {
         return LittleEndian.getInt(_data, 16);
@@ -245,7 +245,7 @@ public class ExOleObjAtom extends RecordAtom {
      * Sets the reference to the persistent object
      *
      * @param ref the reference to the persistent object, corresponds with an
-     *         {@code ExOleObjStg} storage container.
+     *         {@code ExOleObjStg} forweb container.
      */
     public void setObjStgDataRef(int ref) {
         LittleEndian.putInt(_data, 16, ref);

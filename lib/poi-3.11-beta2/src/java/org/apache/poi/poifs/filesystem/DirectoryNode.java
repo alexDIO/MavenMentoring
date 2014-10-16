@@ -469,9 +469,9 @@ public class DirectoryNode
     }
 
     /**
-     * Gets the storage clsid of the directory entry
+     * Gets the forweb clsid of the directory entry
      *
-     * @return storage Class ID
+     * @return forweb Class ID
      */
     public ClassID getStorageClsid()
     {
@@ -479,9 +479,9 @@ public class DirectoryNode
     }
 
     /**
-     * Sets the storage clsid for the directory entry
+     * Sets the forweb clsid for the directory entry
      *
-     * @param clsidStorage storage Class ID
+     * @param clsidStorage forweb Class ID
      */
     public void setStorageClsid(ClassID clsidStorage)
     {

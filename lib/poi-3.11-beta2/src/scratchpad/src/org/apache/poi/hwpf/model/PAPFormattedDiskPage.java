@@ -267,23 +267,23 @@ public final class PAPFormattedDiskPage extends FormattedDiskPage {
             // is grpprl huge?
             if ( grpprl.length > 488 )
             {
-                // if so do we have storage at getHugeGrpprlOffset()
+                // if so do we have forweb at getHugeGrpprlOffset()
                 // int hugeGrpprlOffset = papx.getHugeGrpprlOffset();
-                // if ( hugeGrpprlOffset == -1 ) // then we have no storage...
+                // if ( hugeGrpprlOffset == -1 ) // then we have no forweb...
                 // {
                 // throw new UnsupportedOperationException(
-                // "This Paragraph has no dataStream storage." );
+                // "This Paragraph has no dataStream forweb." );
                 // }
-                // we have some storage...
+                // we have some forweb...
 
-                // get the size of the existing storage
+                // get the size of the existing forweb
                 // int maxHugeGrpprlSize = LittleEndian.getUShort( dataStream,
                 // hugeGrpprlOffset );
                 //
                 // if ( maxHugeGrpprlSize < grpprl.length - 2 )
                 // { // grpprl.length-2 because we don't store the istd
                 // throw new UnsupportedOperationException(
-                // "This Paragraph's dataStream storage is too small." );
+                // "This Paragraph's dataStream forweb is too small." );
                 // }
 
                 // store grpprl at hugeGrpprlOffset

@@ -20,7 +20,7 @@ package org.apache.poi.openxml4j.opc;
 import java.io.File;
 
 /**
- * Storage class for configuration storage parameters.
+ * Storage class for configuration forweb parameters.
  * TODO xml syntax checking is not done with JAXP by default -> remove the schema or do it ?
  *
  * @author CDubettier, Julen Chable

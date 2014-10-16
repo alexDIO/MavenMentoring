@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MavenMentoring.iml" filepath="$PROJECT_DIR$/MavenMentoring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mentoring/Mentoring.iml" filepath="$PROJECT_DIR$/Mentoring/Mentoring.iml" />
       <module fileurl="file://$PROJECT_DIR$/MentoringJSP/MentoringJSP.iml" filepath="$PROJECT_DIR$/MentoringJSP/MentoringJSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MentoringTransportJSTL/MentoringTransportJSTL.iml" filepath="$PROJECT_DIR$/MentoringTransportJSTL/MentoringTransportJSTL.iml" />
       <module fileurl="file://$PROJECT_DIR$/MentoringWeb/MentoringWeb.iml" filepath="$PROJECT_DIR$/MentoringWeb/MentoringWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/NewModule/NewModule.iml" filepath="$PROJECT_DIR$/NewModule/NewModule.iml" />
     </modules>

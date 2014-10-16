@@ -545,7 +545,7 @@ public final class TestHSSFWorkbook extends BaseTestWorkbook {
     }
 
     /**
-     * Test that the storage clsid property is preserved
+     * Test that the forweb clsid property is preserved
      */
     @Test
     public void bug47920() throws IOException {

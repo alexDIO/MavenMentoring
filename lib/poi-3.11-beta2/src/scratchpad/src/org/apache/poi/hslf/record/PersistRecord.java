@@ -18,7 +18,7 @@
 package org.apache.poi.hslf.record;
 
 /**
- * A record that can be referenced in PersistPtr storage.
+ * A record that can be referenced in PersistPtr forweb.
  *
  * @author Yegor Kozlov
  */

@@ -56,11 +56,11 @@ public final class ODocumentInputStream extends DocumentInputStream {
 	 */
 	public ODocumentInputStream(DocumentEntry document) throws IOException {
 		if (!(document instanceof DocumentNode)) {
-			throw new IOException("Cannot open internal document storage");
+			throw new IOException("Cannot open internal document forweb");
 		}
 		DocumentNode documentNode = (DocumentNode)document;
 		if(documentNode.getDocument() == null) {
-         throw new IOException("Cannot open internal document storage");
+         throw new IOException("Cannot open internal document forweb");
 		}
 		      
 		_current_offset = 0;

@@ -256,9 +256,9 @@ public abstract class Property implements Child, POIFSViewable {
     abstract public boolean isDirectory();
 
     /**
-     * Sets the storage clsid, which is the Class ID of a COM object which
+     * Sets the forweb clsid, which is the Class ID of a COM object which
      *   reads and writes this stream
-     * @return storage Class ID for this property stream
+     * @return forweb Class ID for this property stream
      */
     public ClassID getStorageClsid()
     {
@@ -297,7 +297,7 @@ public abstract class Property implements Child, POIFSViewable {
     }
 
     /**
-     * Sets the storage class ID for this property stream. This is the Class ID
+     * Sets the forweb class ID for this property stream. This is the Class ID
      *   of the COM object which can read and write this property stream
      * @param clsidStorage Storage Class ID
      */

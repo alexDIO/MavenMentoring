@@ -1469,7 +1469,7 @@ public final class TestBugs extends BaseTestBugzillaIssues {
 
     /**
      * Odd POIFS blocks issue:
-     * block[ 44 ] already removed from org.apache.poi.poifs.storage.BlockListImpl.remove
+     * block[ 44 ] already removed from org.apache.poi.poifs.forweb.BlockListImpl.remove
      */
     @Test
     public void bug45290() {

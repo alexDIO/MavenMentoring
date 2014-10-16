@@ -61,7 +61,7 @@ public final class NDocumentInputStream extends DocumentInputStream {
      */
     public NDocumentInputStream(DocumentEntry document) throws IOException {
         if (!(document instanceof DocumentNode)) {
-            throw new IOException("Cannot open internal document storage, " + document + " not a Document Node");
+            throw new IOException("Cannot open internal document forweb, " + document + " not a Document Node");
         }
         _current_offset = 0;
         _current_block_count = 0;

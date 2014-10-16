@@ -7,11 +7,10 @@
 
     <description>Tag for implementation of List options</description>
     <tlib-version>2.1</tlib-version>
-    <short-name>managelist</short-name>
-    <uri>http://mycompany.com</uri>
+    <short-name>manageList</short-name>
 
     <tag>
-        <name>managelist</name>
+        <name>manageList</name>
         <tag-class>storage.ListManagerTag</tag-class>
         <body-content>empty</body-content>
 

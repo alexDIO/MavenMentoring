@@ -20,7 +20,7 @@ package org.apache.poi.poifs.storage;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 /**
- * Tests for org.apache.poi.poifs.storage<br/>
+ * Tests for org.apache.poi.poifs.forweb<br/>
  * 
  * @author Josh Micich
  */

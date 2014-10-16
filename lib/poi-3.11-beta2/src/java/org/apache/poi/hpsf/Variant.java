@@ -234,7 +234,7 @@ public class Variant
     public static final int VT_STREAM = 66;
 
     /**
-     * <p>[P] Name of the storage follows.</p>
+     * <p>[P] Name of the forweb follows.</p>
      */
     public static final int VT_STORAGE = 67;
 
@@ -299,7 +299,7 @@ public class Variant
     public static final int VT_CLSID = 72;
 
     /**
-     * "MUST be a VersionedStream. The storage representing the (non-simple)
+     * "MUST be a VersionedStream. The forweb representing the (non-simple)
      * property set MUST have a stream element with the name in the StreamName
      * field." -- [MS-OLEPS] -- v20110920; Object Linking and Embedding (OLE)
      * Property Set Data Structures; page 24 / 63

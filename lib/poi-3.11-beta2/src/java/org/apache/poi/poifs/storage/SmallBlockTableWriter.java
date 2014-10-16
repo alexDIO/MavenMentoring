@@ -30,7 +30,7 @@ import java.util.*;
 import java.io.*;
 
 /**
- * This class implements storage for writing the small blocks used by
+ * This class implements forweb for writing the small blocks used by
  * small documents.
  *
  * @author Marc Johnson (mjohnson at apache dot org)
@@ -131,7 +131,7 @@ public class SmallBlockTableWriter
     /* ********** START implementation of BlockWritable ********** */
 
     /**
-     * Write the storage to an OutputStream
+     * Write the forweb to an OutputStream
      *
      * @param stream the OutputStream to which the stored data should
      *               be written

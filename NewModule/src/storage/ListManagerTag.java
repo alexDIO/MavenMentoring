@@ -27,10 +27,6 @@ public class ListManagerTag extends TagSupport {
         this.indexToRemove = indexToRemove;
     }
 
-//    public void setIndexToRemove(String indexToRemove) {
-//        this.indexToRemove = Integer.parseInt(indexToRemove);
-//    }
-
     public void setNewValueToSet(String newValueToSet) {
         this.newValueToSet = newValueToSet;
     }

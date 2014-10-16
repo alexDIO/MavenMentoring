@@ -5,6 +5,6 @@ package olomakovskyi.transport.storages;
  */
 public class TransportStorageException extends Exception {
     public String toString() {
-        return "Unknown storage. Check properties file.";
+        return "Unknown forweb. Check properties file.";
     }
 }

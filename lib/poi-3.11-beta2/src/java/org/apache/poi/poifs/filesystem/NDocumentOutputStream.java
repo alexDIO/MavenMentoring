@@ -57,7 +57,7 @@ public final class NDocumentOutputStream extends OutputStream {
 	 */
 	public NDocumentOutputStream(DocumentEntry document) throws IOException {
 		if (!(document instanceof DocumentNode)) {
-			throw new IOException("Cannot open internal document storage, " + document + " not a Document Node");
+			throw new IOException("Cannot open internal document forweb, " + document + " not a Document Node");
 		}
 		_document_size = 0;
 		_closed = false;
@@ -76,7 +76,7 @@ public final class NDocumentOutputStream extends OutputStream {
 	 */
 	public NDocumentOutputStream(DirectoryEntry parent, String name) throws IOException {
         if (!(parent instanceof DirectoryNode)) {
-            throw new IOException("Cannot open internal directory storage, " + parent + " not a Directory Node");
+            throw new IOException("Cannot open internal directory forweb, " + parent + " not a Directory Node");
         }
         _document_size = 0;
         _closed = false;
