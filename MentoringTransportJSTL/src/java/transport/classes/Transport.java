@@ -4,8 +4,8 @@ package transport.classes;
  * Created by olomakovskyi on 8/19/2014.
  */
 public abstract class Transport implements ITransport {
-    protected final int id;
-    protected final String transportType;
+    protected int id;
+    protected String transportType;
     protected String mark;
     protected String color;
     protected int manufactureYear;
@@ -54,6 +54,14 @@ public abstract class Transport implements ITransport {
 
     public void setEnergySource(String energySource) {
         this.energySource = energySource;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTransportType(String transportType) {
+        this.transportType = transportType;
     }
 
     public void repaint(String newColor) {

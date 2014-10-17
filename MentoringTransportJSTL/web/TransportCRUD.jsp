@@ -11,11 +11,10 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="tm" uri="/WEB-INF/transportManager.tld"%>
+<%@ taglib prefix="cs" uri="/WEB-INF/compareStrings.tld" %>
 
 <% pageContext.setAttribute("holder", request.getAttribute("holder")); %>
 <c:set var="buttonName" value="Add"/>
-
-
 
 <%--<c:if test="${param['inText'] != null && fn:length(param['inText']) > 0 && 'Add' == param['mainButton']}">--%>
     <%--<ml:manageList storage="${list}" valueToAdd="${param['inText']}"/>--%>
@@ -49,6 +48,14 @@
             passengersCount="${param['passengersCount']}" energySource="${param['energySource']}" transmission="${param['transmission']}" load="${param['load']}"/>
 </c:if>
 
+<c:if test="${param['edit'] != null && param['curElemID'] != null}">
+    <c:set var="buttonName" value="Update"/>
+    <fmt:parseNumber var="index" value="${param['curElemID']}"/>
+    <c:set var="selectedTransportType" value="${holder.map[index].transportType}"/>
+    <c:out value="transport type is ${selectedTransportType}"/>
+    <c:out value="index is ${index}"/>
+</c:if>
+
 
 <html>
 <head>
@@ -76,9 +83,9 @@
                 </td>
                 <td>
                     <select name="transportType" id="transport" onchange="showHide()">
-                        <option value="coupe">coupe</option>
+                        <option value="limousine" ${cs:isSelected(selectedTransportType,"limousine")}>limousine</option>
+                        <option value="coupe" ${cs:isSelected(selectedTransportType,"coupe")}>coupe</option>
                         <option value="sedan">sedan</option>
-                        <option value="limousine">limousine</option>
                         <option value="truck">truck</option>
                         <option value="bus">bus</option>
                         <option value="trolleybus">trolleybus</option>
@@ -146,7 +153,7 @@
                     <input type="text" name="load">
                 </td>
                 <td>
-                    <input type="hidden" name="id">
+                    <input type="hidden" name="id" value="${index}">
                 </td>
             </tr>
             <tr>
